@@ -1,11 +1,19 @@
-import Navbar from './Navbar';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './pages/Navbar';
+import Home from './pages/Home';
+import AboutMe from './pages/AboutMe';
+import Projects from './pages/Projects';
 
 function App() {
   return (
-    <div className="App">
+    <HashRouter>
       <Navbar />
-      <h1 class="text-center pt-2">Hello, World!</h1>
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </HashRouter>
   );
 }
 
