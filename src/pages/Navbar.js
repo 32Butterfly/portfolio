@@ -10,7 +10,7 @@ function Navbar() {
   return (
     <nav className="relative h-12 flex items-center px-4">
       <div className="absolute left-4">
-        <a className="text-lg font-semibold text-slate-800">Evaldas/32Butterfly</a>
+        <a href="/" className="text-lg font-semibold text-slate-800 select-none">Evaldas/32Butterfly</a>
       </div>
       <div className="mx-auto flex space-x-4">
       {navItems.map((item) => (
