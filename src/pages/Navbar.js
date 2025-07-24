@@ -8,15 +8,15 @@ const navItems = [
 
 function Navbar() {
   return (
-    <nav className="relative h-12 flex items-center px-4">
+    <nav className="relative h-12 flex items-center px-4 bg-black z-10">
       <div className="absolute left-4">
-        <a href="/" className="text-lg font-semibold text-slate-800 select-none">Evaldas/32Butterfly</a>
+        <span className="text-lg font-semibold text-white select-none">Evaldas/32Butterfly</span>
       </div>
       <div className="mx-auto flex space-x-4">
       {navItems.map((item) => (
         <Link 
           to={item.url} 
-          className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900">{item.title}
+          className="rounded-lg px-3 py-2 text-white font-medium hover:bg-red-600 hover:text-white">{item.title}
         </Link>
       ))}
       </div>

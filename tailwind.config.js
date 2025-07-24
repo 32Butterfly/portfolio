@@ -12,7 +12,7 @@ module.exports = {
         },
       },
       animation: {
-        flyIn: 'flyIn 1.6s ease-out forwards',
+        flyIn: 'flyIn 1.2s ease-out forwards',
       },
     },
   },
