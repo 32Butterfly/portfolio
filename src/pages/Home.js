@@ -4,11 +4,11 @@ import Image from '../Photo.jpg';
 function Home() {
   return (
     <div className="min-h-screen flex items-start bg-black text-white overflow-hidden">  
-      <div className="flex-1 flex justify-center">
+      <div className="flex-1 flex justify-center items-start">
         <img
           src={Image}
           alt="Spider Lily"
-          className="h-screen w-auto object-cover z-20"
+          className="w-full max-w-full h-auto object-cover z-20 md:h-screen md:w-auto"
         />
       </div>
 
