@@ -6,7 +6,7 @@ function TypeWriterAnimation(){
             a{' '}
             <span className="text-red-600 font-semibold">
             <Typewriter
-                words={['frontend developer', '.NET developer', 'tech enthusiast']}
+                words={['frontend developer?', 'upcoming Wordpress content admin?', 'backend developer?', 'administrator?']}
                 loop={0}
                 cursor
                 cursorStyle="|"
