@@ -5,14 +5,23 @@ module.exports = {
   ],
   theme: {
      extend: {
+        fontFamily: {
+          staatliches: ['Staatliches', 'cursive'],
+        },
+
       keyframes: {
-        flyIn: {
-          '0%': { transform: 'translateY(-80px)', opacity: '0' },
-          '100%': { transform: 'translateY(0)', opacity: '1' },
+          flyInLeft: {
+          '0%': { transform: 'translateX(-80px)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        flyInRight: {
+          '0%': { transform: 'translateX(80px)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
         },
       },
       animation: {
-        flyIn: 'flyIn 1.2s ease-out forwards',
+        flyInLeft: 'flyInLeft 1.2s ease-out forwards',
+        flyInRight: 'flyInRight 1.2s ease-out forwards',
       },
     },
   },
