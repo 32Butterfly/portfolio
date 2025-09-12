@@ -51,6 +51,16 @@ function Home() {
             <p className='mt-4'>
               For more details about my skills, experience, and interests, check the <span className="text-indigo-400 font-semibold">About Me</span> section in the navigation bar.
             </p>
+
+            <p className="text-gray-300 select-none text-center mt-8">You can find and contact me on:</p>
+            <div className="flex gap-6 text-gray-300 justify-center mt-4">
+              <a href="https://github.com/32Butterfly" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors text-4xl">
+                <FaGithub />
+              </a>
+              <a href="https://linkedin.com/in/evaldasdmi" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors text-4xl">
+                <FaLinkedin />
+              </a>
+            </div>
           </p>
         </div>
       </div>
@@ -70,24 +80,12 @@ function Home() {
         </div>
       </div>
 
-      <div className="border-2 border-red-600 flex flex-col animate-flyInRight">
-        <div className="flex justify-between items-center bg-black text-white px-2 py-1 border-2 border-red-600">
-          <span className="select-none font-staatliches">Contact_info.txt</span>
-          <button className="bg-black px-2 text-white font-staatliches">X</button>
-        </div>
-
-        <div className="border-2 border-red-600 p-4 flex flex-col items-center gap-4">
-          <p className="text-gray-300 select-none">You can find and contact me on:</p>
-          <div className="flex gap-6 text-gray-300">
-            <a href="https://github.com/32Butterfly" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors text-4xl">
-              <FaGithub />
-            </a>
-            <a href="https://linkedin.com/in/evaldasdmi" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors text-4xl">
-              <FaLinkedin />
-            </a>
-          </div>
-        </div>
+      <div className=" mt-4 p-2 flex justify-end bg-black">
+        <button onClick={() => window.location.href = "#about"} className="bg-red-600 hover:bg-red-700 text-white font-staatliches px-12 py-3 text-lg transition-colors">
+          Learn More <span className="animate-bounceRight inline-block text-2xl relative">→</span>
+        </button>
       </div>
+
     </div>
   </div>
   );
