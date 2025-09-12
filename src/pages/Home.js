@@ -1,5 +1,6 @@
 import TypeWriterAnimation from './TypeWriterAnimation';
 import Image from '../Photo.jpg';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 function Home() {
   return (
@@ -66,6 +67,25 @@ function Home() {
             <li><span className="font-semibold text-white">Year:</span> 3rd-year Student (5th semester)</li>
             <li><span className="font-semibold text-white">Interests:</span> Programming, Web Development, Networking</li>
           </ul>
+        </div>
+      </div>
+
+      <div className="border-2 border-red-600 flex flex-col animate-flyInRight">
+        <div className="flex justify-between items-center bg-black text-white px-2 py-1 border-2 border-red-600">
+          <span className="select-none font-staatliches">Contact_info.txt</span>
+          <button className="bg-black px-2 text-white font-staatliches">X</button>
+        </div>
+
+        <div className="border-2 border-red-600 p-4 flex flex-col items-center gap-4">
+          <p className="text-gray-300 select-none">You can find and contact me on:</p>
+          <div className="flex gap-6 text-gray-300">
+            <a href="https://github.com/32Butterfly" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors text-4xl">
+              <FaGithub />
+            </a>
+            <a href="https://linkedin.com/in/evaldasdmi" target="_blank" rel="noopener noreferrer" className="hover:text-red-500 transition-colors text-4xl">
+              <FaLinkedin />
+            </a>
+          </div>
         </div>
       </div>
     </div>
