@@ -81,8 +81,8 @@ function Home() {
       </div>
 
       <div className=" mt-4 p-2 flex justify-end bg-black">
-        <button onClick={() => window.location.href = "#about"} className="bg-red-600 hover:bg-red-700 text-white font-staatliches px-12 py-3 text-lg transition-colors">
-          Learn More <span className="animate-bounceRight inline-block text-2xl relative">→</span>
+        <button onClick={() => window.location.href = "/#aboutme"} className="bg-red-600 hover:bg-red-700 text-white font-staatliches px-12 py-3 text-lg transition-colors">
+          Learn More <span className="animate-bounceRight inline-block text-2xl relative will-change-transform">→</span>
         </button>
       </div>
 
