@@ -10,6 +10,11 @@ module.exports = {
         },
 
       keyframes: {
+
+        float: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateY(-15px)' },
+        },
         bounceRight: {
           '0%, 100%': { transform: 'translateX(0)' },
           '50%': { transform: 'translateX(15px)' },
@@ -24,7 +29,8 @@ module.exports = {
         },
       },
       animation: {
-        bounceRight: 'bounceRight 2s ease-in-out infinite',
+        float: 'float 4s ease-in-out infinite',
+        bounceRight: 'bounceRight 1.2s ease-in-out infinite',
         flyInLeft: 'flyInLeft 1.2s ease-out forwards',
         flyInRight: 'flyInRight 1.2s ease-out forwards',
       },
