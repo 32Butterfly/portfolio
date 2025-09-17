@@ -44,8 +44,8 @@ function AboutMe() {
                 className="opacity-0 animate-slideIn">
                 <div
                   className={`flex items-center justify-center gap-4 text-white font-staatliches transform transition-transform 
-                    duration-500 hover:-translate-y-1 hover:scale-105 rounded-lg px-4 py-2 shadow-md shadow-red-900/30
-                    hover:shadow-red-500/40 bg-gray-900/50 ${index === languages.length - 1 ? "mb-8" : ""}`} >
+                    duration-500 hover:-translate-y-1 hover:scale-105 rounded-lg px-3 py-2 shadow-md shadow-red-900/30
+                    hover:shadow-red-500/40 bg-gray-900/50 mx-3 ${index === languages.length - 1 ? "mb-8" : ""}`} >
                   {lang.icon}
                   <span className="w-20 text-left">{lang.name}</span>
               </div>
@@ -56,11 +56,18 @@ function AboutMe() {
 
         <div className="flex-1 flex flex-col gap-2">
           <div className="flex flex-col space-y-8">
-          <h3 className="text-red-500 font-staatliches text-center text-3xl mt-4">Frameworks/Libraries</h3>
-          {frameworks.map((fw) => (
-            <div key={fw.name} className="flex items-center justify-center gap-2 text-white font-staatliches transform transition-transform duration-500 hover:-translate-y-1 hover:scale-105">
-              {fw.icon}
-              <span className="w-20 text-left">{fw.name}</span>
+            <h3 className="text-red-500 font-staatliches text-center text-3xl mt-4 animate-slideIn">Frameworks/Libraries</h3>
+            {frameworks.map((fw, index) => (
+              <div key={fw.name} 
+                style={{ animationDelay: `${index * 500}ms` }}
+                className="opacity-0 animate-slideIn">
+                <div
+                  className={`flex items-center justify-center gap-4 text-white font-staatliches transform transition-transform 
+                    duration-500 hover:-translate-y-1 hover:scale-105 rounded-lg px-3 py-2 shadow-md shadow-red-900/30
+                    hover:shadow-red-500/40 bg-gray-900/50 mx-3 ${index === languages.length - 1 ? "mb-8" : ""}`} >
+                {fw.icon}
+                <span className="w-20 text-left">{fw.name}</span>
+              </div>
             </div>
           ))}
         </div>
@@ -68,24 +75,38 @@ function AboutMe() {
 
         <div className="flex-1 flex flex-col gap-2">
           <div className='flex flex-col space-y-8'>
-            <h3 className="text-red-500 font-staatliches text-center text-3xl mt-4 mb-4">Databases</h3>
-            {databases.map((db) => (
-              <div key={db.name} className="flex items-center justify-center gap-2 text-white font-staatliches transform transition-transform duration-500 hover:-translate-y-1 hover:scale-105">
+            <h3 className="text-red-500 font-staatliches text-center text-3xl mt-4 animate-slideInReverse">Databases</h3>
+            {databases.map((db, index) => (
+              <div key={db.name} 
+                style={{ animationDelay: `${index * 500}ms` }}
+                className="opacity-0 animate-slideInReverse">
+                <div
+                  className={`flex items-center justify-center gap-4 text-white font-staatliches transform transition-transform 
+                    duration-500 hover:-translate-y-1 hover:scale-105 rounded-lg px-3 py-2 shadow-md shadow-red-900/30
+                    hover:shadow-red-500/40 bg-gray-900/50 mx-3 ${index === languages.length - 1 ? "mb-8" : ""}`} >
                 {db.icon}
                 <span className="w-20 text-left">{db.name}</span>
               </div>
+            </div> 
             ))}
           </div>
         </div>
 
         <div className="flex-1 flex flex-col gap-2">
           <div className='flex flex-col space-y-8'>
-            <h3 className="text-red-500 font-staatliches text-center text-3xl mt-4 mb-4">Other</h3>
-              {others.map((item) => (
-                <div key={item.name} className="flex items-center justify-center gap-2 text-white font-staatliches transform transition-transform duration-500 hover:-translate-y-1 hover:scale-105">
+            <h3 className="text-red-500 font-staatliches text-center text-3xl mt-4 animate-slideInReverse">Other</h3>
+              {others.map((item, index) => (
+                <div key={item.name} 
+                  style={{ animationDelay: `${index * 500}ms` }}
+                  className="opacity-0 animate-slideInReverse">
+                  <div
+                    className={`flex items-center justify-center gap-4 text-white font-staatliches transform transition-transform 
+                    duration-500 hover:-translate-y-1 hover:scale-105 rounded-lg px-3 py-2 shadow-md shadow-red-900/30
+                    hover:shadow-red-500/40 bg-gray-900/50 mx-3 ${index === languages.length - 1 ? "mb-8" : ""}`} >
                   {item.icon}
                   <span className="w-28 text-left">{item.name}</span>
                 </div>
+              </div>  
               ))}
           </div>
         </div>
