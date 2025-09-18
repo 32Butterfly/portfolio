@@ -1,4 +1,4 @@
-import TypeWriterAnimation from './TypeWriterAnimation';
+import TypeWriterAnimation from '../components/TypeWriterAnimation';
 import Image from '../Photo.jpg';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
