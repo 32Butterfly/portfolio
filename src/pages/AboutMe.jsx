@@ -1,5 +1,6 @@
 import { SiJavascript, SiPhp, SiCplusplus, SiMysql, SiPostgresql, SiLaravel, SiAnsible, SiReact, SiGit, SiDocker, SiCisco } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
+import AboutMeExperience from './AboutMeExperience';
 
 function AboutMe() {
 
@@ -110,8 +111,9 @@ function AboutMe() {
               ))}
           </div>
         </div>
-      </div>
-    </div>
+      </div> 
+      <AboutMeExperience />
+    </div> 
   );
 }
 
