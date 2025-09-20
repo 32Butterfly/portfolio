@@ -21,6 +21,12 @@ function AboutMeExperience() {
         rootMargin: '30px'
     });
 
+    const { ref: ref4, inView: inView4 } = useInView({
+        triggerOnce: true,
+        threshold: 0.5,
+        rootMargin: '30px'
+    });
+
     return (
     <div className="flex flex-col items-center mt-8">
         <div className="w-10/12 border-2 border-red-600 bg-black">
@@ -46,7 +52,9 @@ function AboutMeExperience() {
                     >
                     <div className="w-5/12 text-right ">
                       <div className="bg-gray-900/80 hover:bg-gray-800/90 rounded-lg p-6 shadow-xl hover:shadow-red-500/20 transition-all duration-300 transform hover:-translate-y-1 border border-gray-700 hover:border-red-500/50">
-                        <time className="text-xs font-medium text-red-400 mb-2 block">2023 September-2024 June</time>
+                        <div className="mb-4">
+                          <time className="text-xs font-medium text-red-400 bg-red-500/20 px-3 py-1 rounded-full border border-red-500/30">2023 September-2024 June</time>
+                        </div>
                         <h3 className="text-xl font-bold text-white mb-1">Information Technology 1st year</h3>
                         <h4 className="text-red-500 font-medium mb-3">Vilnius University</h4>
                         <p className="text-gray-300 text-sm leading-relaxed text-left">
@@ -76,12 +84,14 @@ function AboutMeExperience() {
                         transitionDelay: inView2 ? '200ms' : '0ms'
                     }}
                   >
-                    <div className="w-5/12 text-left">
+                    <div className="w-5/12 text-right">
                       <div className="bg-gray-900/80 hover:bg-gray-800/90 rounded-lg p-6 shadow-xl hover:shadow-red-500/20 transition-all duration-300 transform hover:-translate-y-1 border border-gray-700 hover:border-red-500/50">
-                        <time className="text-xs font-medium text-red-400 mb-2 block">2024 June - 2025 March </time>
+                        <div className="mb-4">
+                          <time className="text-xs font-medium text-red-400 bg-red-500/20 px-3 py-1 rounded-full border border-red-500/30">2024 June - 2025 March</time>
+                        </div>
                         <h3 className="text-xl font-bold text-white mb-1">Working as Information Technology Services Specialist</h3>
                         <h4 className="text-red-500 font-medium mb-3">AB "ORLEN Lietuva"</h4>
-                        <p className="text-gray-300 text-sm leading-relaxed">
+                        <p className="text-gray-300 text-sm leading-relaxed text-left">
                           I was trusted with managing a large-scale data migration project involving over 200,000 files. I
                           transferred data from an outdated database to a new SharePoint 2010 system, ensuring accurate
                           organization, data integrity, and resolving inconsistencies. I configured data views using filters,
@@ -90,6 +100,11 @@ function AboutMeExperience() {
                           a step-by-step guide to help onboard new staff. This improved the site's usability and served as a
                           long-term resource for employee training and support.
                         </p>
+                        <div className="mt-4 flex flex-wrap gap-2">
+                          <span className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-xs border border-green-500/30">Data Migration</span>
+                          <span className="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-xs border border-blue-500/30">SharePoint</span>
+                          <span className="bg-purple-500/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30">Documentation</span>
+                        </div>
                       </div>
                     </div>
                     <div className="w-2/12 flex justify-center">
@@ -108,7 +123,9 @@ function AboutMeExperience() {
                   >
                     <div className="w-5/12 text-right">
                       <div className="bg-gray-900/80 hover:bg-gray-800/90 rounded-lg p-6 shadow-xl hover:shadow-red-500/20 transition-all duration-300 transform hover:-translate-y-1 border border-gray-700 hover:border-red-500/50">
-                        <time className="text-xs font-medium text-red-400 mb-2 block">2024 September - 2025 June</time>
+                        <div className="mb-4">
+                          <time className="text-xs font-medium text-red-400 bg-red-500/20 px-3 py-1 rounded-full border border-red-500/30">2024 September - 2025 June</time>
+                        </div>
                         <h3 className="text-xl font-bold text-white mb-1">Information Technology 2nd year</h3>
                         <h4 className="text-red-500 font-medium mb-3">Vilnius University</h4>
                         <p className="text-gray-300 text-sm leading-relaxed text-left">
@@ -119,6 +136,38 @@ function AboutMeExperience() {
                             <li>Virtualization Basics</li>
                             <li>Web Technologies</li>
                             <li>Data analysis, data networks and visualization</li>
+                          </ul>
+                        </p>
+                      </div>
+                    </div>
+                    <div className="w-2/12 flex justify-center">
+                      <div className="w-4 h-4 bg-red-600 rounded-full border-4 border-black shadow-lg transform transition-all duration-300 hover:scale-125 hover:bg-red-500"></div>
+                    </div>
+                  </div>
+
+                  <div
+                    ref={ref4}
+                    className={`flex items-center flex-row-reverse transition-all duration-700 ${
+                        inView3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+                    }`}
+                    style={{ 
+                        transitionDelay: inView4 ? '200ms' : '0ms'
+                    }}
+                  >
+                    <div className="w-5/12 text-right">
+                      <div className="bg-gray-900/80 hover:bg-gray-800/90 rounded-lg p-6 shadow-xl hover:shadow-red-500/20 transition-all duration-300 transform hover:-translate-y-1 border border-gray-700 hover:border-red-500/50">
+                        <div className="mb-4">
+                          <time className="text-xs font-medium text-red-400 bg-red-500/20 px-3 py-1 rounded-full border border-red-500/30">2025 September - Currently</time>
+                        </div>
+                        <h3 className="text-xl font-bold text-white mb-1">Information Technology 3rd year</h3>
+                        <h4 className="text-red-500 font-medium mb-3">Vilnius University</h4>
+                        <p className="text-gray-300 text-sm leading-relaxed text-left">
+                          Currently am studying:
+                          <ul className="list-disc list-inside mt-2">
+                            <li>Cisco Networking</li>
+                            <li>Blockchain programming</li>
+                            <li>Cyber Security and Data Protection</li>
+                            <li>React on my own :)</li>
                           </ul>
                         </p>
                       </div>
