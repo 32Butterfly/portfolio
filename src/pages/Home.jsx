@@ -36,7 +36,7 @@ function Home() {
           </h1>
           <p className="mt-4 text-lg md:text-xl text-gray-300 max-w-3xl select-none leading-relaxed">
             <TypeWriterAnimation />
-            I study in{' '}
+             I'm 3rd year student in{' '}
             <a
               href="https://www.vu.lt/studijos/stojantiesiems/bakalauro-studiju-sarasas/informacines-technologijos"
               className="text-indigo-400 underline hover:text-indigo-300"
@@ -44,10 +44,8 @@ function Home() {
               rel="noopener noreferrer"
             >
               Information Technology
-            </a>{' '}at Vilnius University. 
-            <p className='mt-4'>
-              I’m still exploring and experimenting with different areas in tech, but I’m interested in web programming and enjoy experimenting with how websites are built.
-            </p>
+            </a>{' '}at Vilnius University. With 9 months of working experience in the IT field.
+
             <p className='mt-4'>
               For more details about my skills, experience, and interests, check the <span className="text-indigo-400 font-semibold">About Me</span> section in the navigation bar.
             </p>

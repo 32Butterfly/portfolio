@@ -1,4 +1,4 @@
-import { SiJavascript, SiPhp, SiCplusplus, SiMysql, SiPostgresql, SiLaravel, SiAnsible, SiReact, SiGit, SiDocker, SiCisco } from 'react-icons/si';
+import { SiJavascript, SiPhp, SiMysql, SiPostgresql, SiLaravel, SiAnsible, SiReact, SiGit, SiDocker, SiCisco } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 
 function TechStack(){
@@ -7,7 +7,6 @@ function TechStack(){
         { icon: <a href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"><SiJavascript className="text-yellow-400" size={58} /> </a>, name: "JavaScript" },
         { icon: <a href = "https://www.php.net/" target="_blank" rel="noopener noreferrer"><SiPhp className="text-blue-500" size={58} /> </a>, name: "PHP" },
         { icon: <a href = "https://www.oracle.com/java/" target="_blank" rel="noopener noreferrer"><FaJava className="text-red-500" size={58} /> </a>, name: "Java" },
-        { icon: <a href = "https://cplusplus.com/" target="_blank" rel="noopener noreferrer"><SiCplusplus className="text-blue-600" size={58} /> </a>, name: "C++" },
       ];
     
       const frameworks = [
@@ -29,7 +28,7 @@ function TechStack(){
 
 
     return(
-        <div className="border-2 border-red-600 flex select-none overflow-hidden ">
+        <div className="w-10/12 mx-auto border-2 border-red-600 flex select-none overflow-hidden ">
             <div className="flex-1 flex flex-col gap-2 border-red-600">
                 <div className="flex flex-col space-y-8">
                 <h3 className="text-red-500 font-staatliches text-center text-3xl mt-4 animate-slideIn">Languages</h3>
